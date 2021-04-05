@@ -36,30 +36,31 @@ def range(a, b=None, c=None):
     code because it can remove some of the overhead of this automation process,
     but the resulting code is much longer and harder to read/write.
     '''
+
     if b is None:
-        beg = 0
-        end = a
-        while beg < end:
-            yield beg
-            beg += 1
+        start = 0
+        finish = a
+        while start < finish:
+            yield start
+            start += 1
     elif c is None:
-        beg = a
-        end = b
-        while beg < end:
-            yield beg
-            beg += 1
+        start = a
+        finish = b
+        while start < finish:
+            yield start
+            start += 1
     else:
-        beg = a
-        end = b
-        if beg > end:
+        start = a
+        finish = b
+        if start > finish:
             if 0 < c:
                 return []
-            while beg > end:
-                beg += c
-                yield beg - c
+            while start > finish:
+                start += c
+                yield start - c
         else:
-            while beg < end:
+            while start < finish:
                 if c < 0:
                     return []
-                yield beg
-                beg += c
+                yield start
+                start += c

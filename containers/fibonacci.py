@@ -83,19 +83,19 @@ class FibIter:
     '''
     def __init__(self, n):
         self.n = n
-        self.i = 0
+        self.counter = 0
         self.f0 = 1
         self.f1 = 1
         self.f2 = None
 
     def __next__(self):
-        if self.n is not None and self.n <= self.i:
+        if self.n is not None and self.n <= self.counter:
             raise StopIteration
-        elif self.i < 2:
-            self.i += 1
+        elif self.counter < 2:
+            self.counter += 1
             return 1
         else:
-            self.i += 1
+            self.counter += 1
             self.f2 = self.f0 + self.f1
             self.f0 = self.f1
             self.f1 = self.f2
@@ -111,21 +111,21 @@ def fib_yield(n=None):
     f0 = 1
     f1 = 1
     if n is None:
-        i = 0
+        counter = 0
         while True:
             f2 = f1 + f0
             f0 = f1
-            if i >= 2:
+            if counter >= 2:
                 f1 = f2
-            if i < 2:
+            if counter < 2:
                 f2 = 1
-            i += 1
+            counter += 1
             yield f2
-    for i in range(n):
+    for counter in range(n):
         f2 = f1 + f0
         f0 = f1
-        if i >= 2:
+        if counter >= 2:
             f1 = f2
-        if i < 2:
+        if counter < 2:
             f2 = 1
         yield f2
