@@ -94,8 +94,8 @@ class NormalizedStr:
         after adding them together.
         '''
 
-        combined_string = self.text + str(b)
-        normal = unicodedata.normalize(self.normal_form, combined_string)
+        combined = self.text + str(b)
+        normal = unicodedata.normalize(self.normal_form, combined)
 
         return NormalizedStr(normal)
 
