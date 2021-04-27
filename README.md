@@ -7,3 +7,4 @@ Build status:
 1. [![tests-heap](https://github.com/mariagerges/week8_containers/actions/workflows/tests-heap.yml/badge.svg)](https://github.com/mariagerges/week8_containers/actions/workflows/tests-heap.yml)
 1. [![tests-BinaryTree](https://github.com/mariagerges/week8_containers/actions/workflows/tests-binarytree.yml/badge.svg)](https://github.com/mariagerges/week8_containers/actions/workflows/tests-binarytree.yml)
 1. [![tests-AVLTree](https://github.com/mariagerges/week8_containers/actions/workflows/tests-AVLTree.yml/badge.svg)](https://github.com/mariagerges/week8_containers/actions/workflows/tests-AVLTree.yml)
+1. [![tests-BST](https://github.com/mariagerges/week8_containers/actions/workflows/tests-BST.yml/badge.svg)](https://github.com/mariagerges/week8_containers/actions/workflows/tests-BST.yml)
