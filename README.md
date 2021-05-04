@@ -1,5 +1,3 @@
-Data Structures and Algorithms course package. This course was taught by mike izbicki from claremont mckenna college. Data Science major. the project has AvlTree, BinarySearch Tree, Unicode, and Heap
-
 
 # containers
 
