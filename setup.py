@@ -15,8 +15,8 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/realpython/reader",
-    author="Real Python",
-    author_email="info@realpython.com",
+    author="Maria Gerges",
+    author_email="mgerges23@students.claremontmckenna.edu",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
